@@ -1,0 +1,11 @@
+NET "main_clk" LOC = "P5" | BUFG = CLK; #100MHz CLOCK
+
+NET reset LOC = "P39" | BUFG = SR; #RESET
+
+NET driver_clk_out LOC = "P8"; #CLK_ATTINY
+NET target_clk_out_inv LOC = "P9"; #TARGET_CLK_INV
+NET glitch_req LOC = "P12";	#GLITCH_REQUEST
+NET clk_en LOC = "P13";	#TARGET_CLK_ENABLE (1)
+NET clk_en2 LOC = "P19";	#TARGET_CLK_ENABLE (2)
+NET glitchless_clk LOC = "P20"; #TARGET_CLK_NOT_INV_GLITCHLESS
+NET target_clk_out_not_inv LOC = "P22"; #TARGET_CLK_NOT_INV
